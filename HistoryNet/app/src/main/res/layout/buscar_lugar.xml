@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageView2"
+                android:adjustViewBounds="true"
+                android:background="@drawable/titulo" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/botonHome"
+                android:clickable="true"
+                android:onClick="botonHome"
+                android:background="@drawable/boton_home"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/botonAjustes"
+                android:background="@drawable/boton_ajustes" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="360dp"
+        android:layout_height="40dp">
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="40dp">
+
+            <EditText
+                android:layout_width="316dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="#DDDDDD"
+                android:hint="  Ingresar dirección"
+                android:textStyle="bold"
+                android:id="@+id/direccion" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/buscar"
+                android:clickable="true"
+                android:onClick="botonBuscarLugar"
+                android:id="@+id/btn_buscarLugar">
+                </ImageButton>
+
+        </TableRow>
+    </TableLayout>
+
+    <fragment
+        android:id="@+id/mapa"
+        android:layout_marginTop="2dp"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:background="@drawable/boton_verlugar"
+                android:id="@+id/btn_verLugar" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

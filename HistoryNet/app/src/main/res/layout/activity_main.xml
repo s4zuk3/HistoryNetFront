@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageView2"
+                android:adjustViewBounds="true"
+                android:background="@drawable/titulo" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/botonHome"
+                android:background="@drawable/boton_home"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/botonAjustes"
+                android:background="@drawable/boton_ajustes" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:background="@drawable/diseno_botones"
+                android:text="Buscar Lugar"
+                android:typeface="monospace"
+                android:id="@+id/boton_buscarLugar"
+                android:clickable="true"
+                android:onClick="buscarLugar"
+                android:nestedScrollingEnabled="false" />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:background="@drawable/diseno_botones"
+                android:text="Usar GPS"
+                android:typeface="monospace"
+                android:clickable="true"
+                android:onClick="lugarActual"
+                android:id="@+id/boton_UsarGps" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/novedades"
+        android:id="@+id/imagen_novedades" />
+
+    <TableLayout
+        android:layout_width="360dp"
+        android:background="#FFFF66"
+        android:layout_height="150dp">
+        </TableLayout>
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/favoritos"
+        android:id="@+id/imagen_favoritos" />
+
+    <TableLayout
+        android:layout_width="360dp"
+        android:background="#FFFF66"
+        android:layout_height="150dp">
+        </TableLayout>
+
+</LinearLayout>

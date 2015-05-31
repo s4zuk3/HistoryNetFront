@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageView2"
+                android:adjustViewBounds="true"
+                android:background="@drawable/titulo" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/botonHome"
+                android:clickable="true"
+                android:onClick="botonHome"
+                android:background="@drawable/boton_home"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:id="@+id/botonAjustes"
+                android:background="@drawable/boton_ajustes" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="360dp"
+        android:layout_height="50dp">
+
+        <TableRow
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="256dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lucacion_actual"
+                android:id="@+id/locacionActual" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/estrella"
+                android:clickable="true"
+                android:onClick="boton_estrella"
+                android:id="@+id/btn_favoritos" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/comentario"
+                android:id="@+id/btn_agregarComentario" />
+        </TableRow>
+    </TableLayout>
+
+    <fragment
+        android:id="@+id/mapa"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <ImageView
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/informacion"
+        android:id="@+id/informacion" />
+
+    <TableLayout
+        android:layout_width="360dp"
+        android:background="#FFFF66"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="78dp">
+    </TableLayout>
+
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/aporte_comunidad"
+        android:id="@+id/aportesComunidad" />
+
+</LinearLayout>
